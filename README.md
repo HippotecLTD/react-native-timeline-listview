@@ -1,6 +1,8 @@
 # React Native Timeline Listview
 Timeline component for React Native App work for Android and iOS
 
+Added option for dropDown View
+
 ![untitled-1](https://cloud.githubusercontent.com/assets/21040043/24750025/8c8d044e-1aef-11e7-8fd7-7d64431af7e4.png)
 
 **Table of Contents**
