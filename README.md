@@ -235,7 +235,47 @@ render(){
 
 ## dropDown
 
-`ghgh`
+`<Timeline
+                                                            style={styles.history}
+                                                            data={this.props.data.filter(ele => ele.day === historyObject.day)}
+                                                            options={{
+                                                                removeClippedSubviews: false,
+                                                                scrollEnabled: false,
+                                                            }}
+                                                            lineColor={'#004769'}
+                                                            circleColor={'#004769'}
+                                                            circleSize={10}
+                                                            dotColor={'#004769'}
+                                                            timeContainerStyle={{
+                                                                minWidth: 45,
+                                                            }}
+                                                            timeStyle={{
+                                                                marginLeft: screenWidth * 0.06,
+                                                                marginBottom: 10,
+                                                                width: 40,
+                                                                fontSize: 18,
+                                                                fontFamily: 'Assistant-Regular',
+                                                                color: '#004769',
+                                                                textAlign: 'center',
+                                                                numberOfLines: 2,
+                                                            }}
+                                                            renderDetail={this.renderDetail}
+                                                            onEventPress={(event) => {
+                                                                (this.state.eventData == null) ? this.setState({eventData: event.dropDownData}) : this.setState({eventData: null});
+                                                            }}
+                                                            showDropDown={this.state.eventData}
+                                                            dropDownColor={'#eaeaea'}
+                                                            dropDownWidth={screenWidth}
+                                                            dropDownHeight={'auto'}
+                                                            dropDownContent={(event) => {
+                                                                return (
+                                                                    <Text>This is Drop Down</Text>
+                                                                    );
+                                                            }
+                                                            }
+                                                        />`
+                                                        
+                                                        
 
 
 ## Column Format
