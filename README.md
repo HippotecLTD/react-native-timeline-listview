@@ -235,7 +235,78 @@ render(){
 
 ## dropDown
 
-`ghgh`
+
+Change dropDown width:
+
+`dropDownWidth={400}`
+
+Change dropDown height:
+
+`dropDownHeight={400}`
+
+Change drop down backgroundColor:
+
+`dropDownColor={'#eaeaea'}`
+
+Add content to dropDown:
+
+`dropDownContent={(event) => {
+ return (
+ <Text>This is Drop Down</Text>
+      )
+   }
+ }`
+                                                
+ The Full Apperance of it when it added to the tomeline code:
+ 
+ ```
+ <Timeline
+style={styles.history}
+data={this.state.data}
+options={
+    {
+        removeClippedSubviews: false,
+        scrollEnabled: false,
+    }
+}
+lineColor={'#004769'}
+circleColor={'#004769'}
+circleSize={10}
+dotColor={'#004769'}
+timeContainerStyle={{minWidth: 45}}
+timeStyle={
+    {
+        marginLeft: screenWidth * 0.06,
+        marginBottom: 10,
+        width: 40,
+        fontSize: 18,
+        fontFamily: 'Assistant-Regular',
+        color: '#004769',
+        textAlign: 'center',
+        numberOfLines: 2,
+    }
+}
+renderDetail={this.renderDetail}
+onEventPress={(event) => {
+        (this.state.eventData == null) ? this.setState({
+            eventData: event.dropDownData
+        }): this.setState({
+            eventData: null
+        });
+    }
+}
+showDropDown={this.state.eventData}
+dropDownColor={'#eaeaea'}
+dropDownWidth={400}
+dropDownHeight={400}
+dropDownContent={(event) => {
+            return ( 
+                <Text>This is Drop Down</Text>
+                );
+            }
+     }
+/>
+```        
 
 
 ## Column Format
