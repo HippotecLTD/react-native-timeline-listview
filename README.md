@@ -257,7 +257,7 @@ Add content to dropDown:
    }
  }`
                                                 
- The Full Apperance of it when it added to the tomeline code:
+ The Full Apperance of it when it added to the timeline code:
  
  ```
  <Timeline
@@ -307,6 +307,14 @@ dropDownContent={(event) => {
      }
 />
 ```        
+
+
+
+
+![dropdown](/examples/Example/img/dropdown.png)
+
+
+
 
 
 ## Column Format
